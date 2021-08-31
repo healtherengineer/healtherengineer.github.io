@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+body {
+  min-height: 200vh;
+}
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 10px;
+  z-index: 10000;
+}
+header.sticky {
+  padding: 5px 100px;
+  background: #fff;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+header .logo {
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-left: 100px;
+  transition: 0.6s;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1.5rem;
+}
+header ul li {
+  position: relative;
+  list-style: none;
+}
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 1rem;
+
+  padding: 5px;
+  transition: 0.6s;
+}
+header ul li a:hover {
+  opacity: 0.4;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url("../images/Venice-Backgrounds/sunset-in-venice-1080P-wallpaper.jpg");
+  background-size: cover;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+header.sticky ul li a,
+header.sticky .logo {
+  color: black;
+  font-weight: 500px;
+}
+.container {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.main-page-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+}
+.photo-and-title {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+margin-right: 500px;
+  background-color: rgba(44, 44, 44, 0.4);
+  padding: 1.3rem;
+  backdrop-filter: blur(8px);
+  border-radius: 4px;
+}
+
+.main-title h1 {
+  margin-bottom: 0.5rem;
+}
+.photo-and-title img {
+  border-radius: 0.5rem;
+  max-width: 350px;
+  height: 250px;
+  margin-bottom: 0.5rem;
+}
+.aboutus {
+  position: relative;
+  left: 0;
+}
+.aboutus i {
+  margin: 0px 0.5rem;
+}
+hr {
+  margin-bottom: 0.5rem;
+}
+
+.introduction-text .back h1 {
+  margin-bottom: 0.5rem;
+}
+.country-card {
+  max-width: 30%;
+  height: 350px;
+  border-radius: 4px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+.country-card:hover {
+  filter: grayscale(100%);
+  backdrop-filter: blur(8px);
+}
+.country-card img {
+  border-radius: 4px;
+}
+.where-been-main-container {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(0deg, #ddd, #fff);
+}
+.where-been {
+  max-width: 1400px;
+  margin: 0px auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  text-align: center;
+  position: relative;
+}
+.country-title {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  font-size: 1.5rem;
+  backdrop-filter: blur(5px);
+  color: #fff;
+  width: 100%;
+  border-radius: 4px;
+}
+.where-been-title {
+  text-align: center;
+  margin-bottom: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.titilci {
+  width: 33.3%;
+  border-bottom: 1px solid #009688;
+}
+/* ul
+ */
+
+.contact-footer {
+  max-width: 100%;
+  padding: 3rem;
+  position: relative;
+  background-color: #05658f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quote {
+  background-color: #05658f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #f2f2f2;
+  padding-bottom: 0.5rem;
+  font-family: "Kaisei HarunoUmi", serif;
+}
+
+.contact-footer ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.contact-footer ul li {
+  list-style: none;
+}
+
+.contact-footer ul li a {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  /* display block yapınca width height verdik ve kare görünüm elde ettik. */
+  display: block;
+  text-align: center;
+  margin: 0 10px;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration: none;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.8);
+  background: linear-gradient(0deg, #ddd, #fff);
+  transition: 0.5s;
+}
+
+.contact-footer ul li a:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin: 0px;
+}
+
+.contact-footer ul li a .fab {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 50%;
+  line-height: calc(60px - 12px);
+  font-size: 24px;
+  color: #262626;
+  transition: 0.5s;
+}
+
+.contact-footer ul li:nth-child(1) a:hover .fab {
+  color: #e4405f;
+}
+
+.contact-footer ul li:nth-child(2) a:hover .fab {
+  color: #000;
+}
+
+.contact-footer ul li:nth-child(3) a:hover .fab {
+  color: #007bb6;
+}
+
+.resume-btn{
+  
+  text-decoration: none;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  display: inline-block;
+  background-color: #05658f;
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+
+}
+.resume-btn:hover{
+  color: #05658f;
+  background-color: #fff;
+}
+.go-contact{
+  text-decoration: none;
+  color: #007bb6;
+}

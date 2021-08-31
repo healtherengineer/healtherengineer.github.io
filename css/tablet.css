@@ -1,0 +1,35 @@
+
+.where-been{
+    margin: 0px auto;
+}
+.main-page-card{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+header{
+    padding: 5px 10px;
+    background: #fff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    flex-direction: column;
+
+}
+
+header .logo{
+    margin:0 ;
+    margin-bottom: 0.5rem;
+}
+header ul li a, header .logo{
+    color: black;
+    font-weight: 500px;
+}
+.photo-and-title{
+    margin: 0;
+    margin-top: 100px;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.resume-btn{
+    width: 100%;
+}

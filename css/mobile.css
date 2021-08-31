@@ -1,0 +1,15 @@
+/* 
+third 100%
+
+information box 100%
+
+*/
+.biggest-container{
+    flex-direction: column;
+}
+.information-box{
+    width: 100%;
+}
+.third{
+    width: 100%;
+}
