@@ -115,7 +115,8 @@ margin-right: 500px;
 .photo-and-title img {
   border-radius: 0.5rem;
   max-width: 350px;
-  height: 250px;
+  object-fit: cover;
+  object-position: 0% 0%;
   margin-bottom: 0.5rem;
 }
 .aboutus {
